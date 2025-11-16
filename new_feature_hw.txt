@@ -1,0 +1,23 @@
+Feature: embedded online shops for ecommerce accounts
+
+users stories:
+As a seller I want to be able to open an online shop
+- Given that the seller doesn't have an existing open online shop when he requests to open a new one then a new shop will be created for the seller.
+- Given that the seller does have an existing open online shop when he requests to open a new one then a message will pop up informing the user that he already has a shop.
+
+As a seller I want to add a new product
+- Given that the product doesn't exist when the user tries to create it then create the new product.
+- Given that the product does exist when the user tries to create it then show an informative message.
+
+As a seller I want to add a new category
+- Given that the category doesn't exist when the user tries to create it then create the new product.
+- Given that the category does exist when the user tries to create it then show an informative message.
+
+As a seller I want to modify existing products
+- Given that the product exists when the user request to modify it then take him to the modification page.
+- Given that the product doesn't exist when the user request to modify it show an informative message.
+
+As a seller I want to modify existing categories
+- Given that the category exists when the user request to modify it then take him to the modification page.
+- Given that the category doesn't exist when the user request to modify it show an informative message.
+ 
